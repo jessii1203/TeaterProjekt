@@ -1,6 +1,10 @@
 package com.example.teaterprojekt.Repository;
 
 import com.example.teaterprojekt.Model.Manager;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ManagerRepository extends JpsRepository <Manager,String>{
+@Repository
+public interface ManagerRepository extends JpaRepository<Manager,Integer> {
 }
+
